@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.campaign__items {
+  margin-top: rem(24);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}

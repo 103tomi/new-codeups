@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.price-list__title {
+  font-size: rem(16);
+  line-height: calc(24 / 16);
+  font-family: $base-font-family;
+  font-weight: $bold;
+  margin-top: rem(4);
+  color: $darkgreen;
+  border-bottom: 1px solid $green1;
+  padding-bottom: rem(4);
+}
+
+.price-list dl {
+  display: flex;
+  justify-content: space-between;
+  margin-top: rem(8);
+}
+
+.price-list dt,
+.price-list dd {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+  }
+}
