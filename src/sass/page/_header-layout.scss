@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.header-layout {
+  height: rem(80);
+  @include mq("md") {
+    height: rem(90);
+  }
+}

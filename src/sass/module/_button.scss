@@ -2,6 +2,7 @@
 
 
 .button {
+  display: inline-block;
   font-size: rem(14);
   line-height: calc(22 / 14);
   font-family: $second-font-family;
@@ -11,7 +12,10 @@
   padding: rem(16) rem(40);
   position: relative;
   z-index: 1;
+  cursor: pointer;
 }
+
+
 
 .button::first-letter {
   text-transform: capitalize;
@@ -51,27 +55,30 @@
   bottom: -4px;
 }
 
-.button span:nth-child(2) {
+.button span::after {
+  display: inline-block;
   position: absolute;
+  content: "";
+  background-image: url(../images/common/btn.png);
+  background-size: contain;
+  vertical-align: middle;
+  background-repeat: no-repeat;
   width: rem(40);
-  height: 1px;
-  background-color: $white;
-  right: 19.8%;
-  bottom: 48%;
-  border-radius: 1px;
+  height: rem(6);
+  right: rem(40);
+  top: rem(22);
 }
 
-.button span:nth-child(3) {
+.button:hover span::after {
+  display: inline-block;
   position: absolute;
-  width: rem(6);
-  height: 1px;
-  background-color: $white;
-  transform: rotate(35deg);
-  right: 19.5%;
-  bottom: 51%;
-  border-radius: 1px;
-}
-
-.button:hover span {
-  background-color: $green1;
+  content: "";
+  background-image: url(../images/common/btn2.png);
+  background-size: contain;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  width: rem(40);
+  height: rem(6);
+  right: rem(40);
+  top: rem(22);
 }
