@@ -5,7 +5,14 @@
 }
 
 .header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: inherit;
+  padding: 0 rem(15);
+  @include mq("md") {
+    padding: 0 rem(40);
+  }
 }
 
 .header__logo {
@@ -41,7 +48,7 @@
   left: 0;
   display:inline-block;
   width: 100%;
-  height: rem(1);
+  height: 1px;
   background-color: $white;
   border-radius: rem(1);
   transition: all 0.3s;
@@ -72,4 +79,20 @@
 .header__hamburger.is-active span:nth-child(3) {
   top: rem(12);
   transform: rotate(-40deg);
+}
+
+.header__drawer {
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: $green1;
+}
+
+.header__nav {
+  height: inherit;
 }

@@ -15,12 +15,6 @@
   cursor: pointer;
 }
 
-
-
-.button::first-letter {
-  text-transform: capitalize;
-}
-
 .button::after {
   background-color: $white;
   border: 1px solid $green1;
