@@ -32,4 +32,14 @@ function resetHamburger() {
   }
 }
 
+const swiper = new Swiper(".js-topMv-swiper", {
+  loop: true,
+  effect: "fade",
+  speed: 3000,
+  allowTouchMove: false,
+  autoplay: {
+    delay: 3000,
+  },
+});
+
 });
