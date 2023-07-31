@@ -1,8 +1,15 @@
 @use "global" as *;
 
-.campaign__items {
-  margin-top: rem(24);
+.campaign__images {
+  height: auto;
+  width: 100%;
+}
+
+
+.campaign__button {
+  text-align: center;
+  margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(40);
+    margin-top: rem(80);
   }
 }

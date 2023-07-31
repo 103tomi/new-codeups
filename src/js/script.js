@@ -32,14 +32,45 @@ function resetHamburger() {
   }
 }
 
-const swiper = new Swiper(".js-topMv-swiper", {
+// // メインビューのスライダー
+var swiper = new Swiper(".js-topMv-swiper", {
   loop: true,
   effect: "fade",
   speed: 3000,
-  allowTouchMove: false,
   autoplay: {
-    delay: 3000,
+    delay:3000,
   },
 });
+
+var swiper = new Swiper(".js-campaign-swiper", {
+  loop: true,
+  speed: 1500,
+  centeredSlides: true,
+  breakpoints: {
+    375: {
+      slidesPerView: 1.5,
+      spaceBetween: 24,
+    },
+  },
+  breakpoints: {
+    768: {
+      slidesPerView: 2.5,
+      spaceBetween: 32,
+    },
+    },
+  breakpoints: {
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 32,
+    },
+  },
+    1440: {
+      slidesPerView: 3.5,
+      spaceBetween: 40,
+    },
+  autoplay: {
+    delay:2000,
+  },
+  });
 
 });
