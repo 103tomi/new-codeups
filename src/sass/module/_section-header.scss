@@ -1,5 +1,7 @@
 @use "global" as *;
 
+
+
 .section-header__engTitle {
   font-size: rem(32);
   line-height: calc(40 / 32);
@@ -16,6 +18,18 @@
   color: $green1;
 }
 
+.section-header__engTitle--white {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
+.section-header__engTitle--white::first-letter {
+  @include mq("md") {
+    color: $white;
+  }
+}
+
 .section-header__jpnTitle {
   font-size: rem(12);
   line-height: calc(18 / 12);
@@ -29,3 +43,8 @@
   }
 }
 
+.section-header__jpnTitle--white {
+  @include mq("md") {
+    color: $white;
+  }
+}

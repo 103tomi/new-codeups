@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .header {
-  background-color: $darkgreen;
+  background-color: rgba(13, 41, 54, 0.68);
 }
 
 .header__inner {
@@ -36,11 +36,6 @@
   height: inherit;
   cursor:pointer;
   }
-
-  .header__hamburger.is-active {
-    
-  }
-
 
 .header__hamburger  span {
   position: absolute;

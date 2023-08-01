@@ -1,10 +1,40 @@
 @use "global" as *;
 
+.voice {
+  position: relative;
+}
+
 .voice__items {
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: rem(40);
+  margin-top: rem(40);
   @include mq("md") {
     grid-template-columns: repeat(2 , 1fr);
+    margin-top: rem(30);
+  }
+}
+
+.voice__button {
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.voice__illust {
+  width: rem(301);
+  position: absolute;
+  top: rem(-120);
+  left: calc(50% - rem(619));
+}
+
+.voice__illust2 {
+  @include mq("md") {
+    width: rem(71);
+    position: absolute;
+    bottom: rem(-67);
+    right: calc(50% - rem(540));
   }
 }

@@ -1,8 +1,48 @@
 @use "global" as *;
 
+.blog {
+  @include mq("md") {
+    padding-top: rem(100);
+    background-image: url(../images/common/blog_bg.jpg);
+    background-size: 100% 60.16%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+}
+
 .blog__items {
   margin-top: rem(24);
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: rem(40);
+
   @include mq("md") {
     margin-top: rem(80);
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.blog-card__img img {
+  aspect-ratio: 301 / 201;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog__button {
+  text-align: center;
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.blog__illust {
+  @include mq("md") {
+    width: rem(376);
+    position: absolute;
+    top: rem(24);
+    left: calc(50% - rem(620));
   }
 }

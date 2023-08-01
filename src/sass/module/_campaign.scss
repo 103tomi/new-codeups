@@ -1,8 +1,12 @@
 @use "global" as *;
 
-.campaign__images {
+.campaign__image {
+  max-width: rem(280);
   height: auto;
   width: 100%;
+  @include mq("md") {
+    max-width: rem(333);
+  }
 }
 
 

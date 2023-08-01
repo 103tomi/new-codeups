@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.topMv {
+.mv {
   position: relative;
   height: 100vh;
 }
 
-.topMv__inner {
+.mv__inner {
   height: inherit;
 }
 
-.topMv__header {
+.mv__header {
   z-index: 10;
   position: absolute;
   top: 49%;
@@ -18,7 +18,7 @@
   color: $white;
 }
 
-.topMv__title {
+.mv__title {
   font-size: rem(40);
   font-weight: $regular;
   font-family: $third-font-family;
@@ -31,7 +31,7 @@
 
 }
 
-.topMv__text {
+.mv__text {
   font-size: rem(20);
   font-family: $second-font-family;
   line-height: 1;
@@ -39,12 +39,12 @@
 }
 
 
-.topMv__img,
-.topMv__img picture,
-.topMv__img img {
+.mv__img,
+.mv__img picture,
+.mv__img img {
   height: inherit;
 }
 
-.topMv__img img {
+.mv__img img {
   object-fit: cover;
 }
