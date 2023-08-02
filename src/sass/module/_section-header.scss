@@ -14,6 +14,14 @@
   }
 }
 
+.section-header__engTitle--large {
+  font-size: rem(80);
+  line-height: 1;
+  @include mq("md") {
+    font-size: rem(80);
+  }
+}
+
 .section-header__engTitle::first-letter  {
   color: $green1;
 }
@@ -33,7 +41,6 @@
 .section-header__jpnTitle {
   font-size: rem(12);
   line-height: calc(18 / 12);
-  font-family: $base-font-family;
   font-weight: $regular;
   color: $green1;
   text-align: center;

@@ -2,11 +2,8 @@
 
 .nav__content {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   gap: rem(6);
-  padding-top: rem(104);
-  padding-bottom: rem(111);
-
   @include mq("md") {
     gap: rem(16);
     padding-top: 0;

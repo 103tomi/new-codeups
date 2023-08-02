@@ -4,3 +4,51 @@
   background-color: $green1;
   padding: rem(80) 0;
 }
+
+.footer__head {
+  @include mq("md") {
+    display: flex;
+    gap: rem(40);
+  }
+}
+
+.footer__logo {
+  width: rem(120);
+
+}
+
+.footer__sns {
+  margin-top: rem(20);
+}
+
+.footer__sns-items {
+  display: flex;
+  gap: rem(20);
+}
+
+.footer__sns-item img {
+  width: rem(20);
+  @include mq("md") {
+    width: rem(26);
+  }
+}
+
+.footer__nav-wrap {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(24);
+  }
+}
+
+.footer__copyright {
+  font-size: rem(12);
+  line-height: calc(18 / 12);
+  font-family: $second-font-family;
+  color: $white;
+  text-align: center;
+  margin-top: rem(40);
+  @include mq("md") {
+    font-size: rem(14);
+    margin-top: rem(80);
+  }
+}
