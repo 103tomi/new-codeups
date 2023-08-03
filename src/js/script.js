@@ -44,23 +44,23 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // キャンペーンのスライダー
   var swiper = new Swiper(".js-campaign-swiper", {
-    loop: true,
-    speed: 1500,
+    // loop: true,
+    // speed: 1500,
     slidesPerView: 1.2,
     spaceBetween: 24,
     allowTouchMove: false,
 
     breakpoints: {
       768: {
-        slidesPerView: 3.2,
+        slidesPerView: 3,
         spaceBetween: 40,
       },
     },
 
-    autoplay: {
-      delay: 1500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 1500,
+    //   disableOnInteraction: false,
+    // },
 
     navigation: {
       nextEl: ".swiper-button-next",
@@ -73,26 +73,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var box = $('.js-effect'),
     speed = 700;
 
-  //.colorboxの付いた全ての要素に対して下記の処理を行う
-  box.each(function () {
-    $(this).append('<div class="color"></div>')
-    var color = $(this).find($('.color')),
-      image = $(this).find('img');
-    var counter = 0;
+  // //.colorboxの付いた全ての要素に対して下記の処理を行う
+  // box.each(function () {
+  //   $(this).append('<div class="color"></div>')
+  //   var color = $(this).find($('.color')),
+  //     image = $(this).find('img');
+  //   var counter = 0;
 
-    image.css('opacity', '0');
-    color.css('width', '0%');
-    //inviewを使って背景色が画面に現れたら処理をする
-    color.on('inview', function () {
-      if (counter == 0) {
-        $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
-          image.css('opacity', '1');
-          $(this).css({ 'left': '0', 'right': 'auto' });
-          $(this).animate({ 'width': '0%' }, speed);
-        })
-        counter = 1;
-      }
-    });
-  });
+  //   image.css('opacity', '0');
+  //   color.css('width', '0%');
+  //   //inviewを使って背景色が画面に現れたら処理をする
+  //   color.on('inview', function () {
+  //     if (counter == 0) {
+  //       $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+  //         image.css('opacity', '1');
+  //         $(this).css({ 'left': '0', 'right': 'auto' });
+  //         $(this).animate({ 'width': '0%' }, speed);
+  //       })
+  //       counter = 1;
+  //     }
+  //   });
+  // });
 
 });

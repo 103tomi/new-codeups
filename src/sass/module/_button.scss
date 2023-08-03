@@ -9,7 +9,7 @@
   color: $white;
   background-color: $green1;
   width: rem(202);
-  padding: rem(16) rem(40);
+  padding: rem(16) rem(88) rem(16) rem(40);
   position: relative;
   z-index: 1;
   cursor: pointer;
@@ -55,11 +55,10 @@
   content: "";
   background-image: url(../images/common/btn.png);
   background-size: contain;
-  vertical-align: middle;
   background-repeat: no-repeat;
   width: rem(40);
   height: rem(6);
-  right: rem(20);
+  right: rem(34);
   top: rem(22);
 }
 

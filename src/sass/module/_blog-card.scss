@@ -13,7 +13,7 @@
 }
 
 .blog-card__body {
-  margin-top: rem(24);
+  margin-top: rem(14);
 }
 
 .blog-card__head {
@@ -33,16 +33,15 @@
   line-height: calc(24 / 16);
   font-family: $base-font-family;
   font-weight: $medium;
-  margin-top: rem(4);
+  margin-top: rem(1);
   color: $darkgreen;
 }
 
 .blog-card__text {
   font-size: rem(16);
   line-height: calc(24 / 16);
-  letter-spacing: 0.01em;
   font-family: $base-font-family;
   font-weight: $regular;
   color: $darkgreen;
-  margin-top: rem(16);
+  margin-top: rem(14);
 }

@@ -16,6 +16,9 @@
 
 .card__body {
   padding: rem(16) rem(16) rem(24);
+  @include mq("md") {
+    padding: rem(24) rem(16) rem(40);
+  }
 }
 
 .card__head {
@@ -31,23 +34,25 @@
   font-weight: $regular;
   color: $green1;
   border: 1px solid $green1;
-  padding: rem(4) rem(12);
+  padding: rem(5) rem(12);
   @include mq("md") {
-    padding: rem(6) rem(12);
+    padding: rem(4) rem(15);
   }
 }
 
 .card__title {
   font-size: rem(16);
   line-height: calc(24 / 16);
-  font-family: $base-font-family;
   font-weight: $medium;
   margin-top: rem(4);
   color: $darkgreen;
 }
 
 .card__foot {
-  margin-top: rem(16);
+  margin-top: rem(8);
+  @include mq("md") {
+      margin-top: rem(13);
+  }
 }
 
 .card__text {
@@ -66,7 +71,7 @@
   display: flex;
   justify-content: center;
   gap: rem(24);
-  margin-top: rem(8);
+  margin-top: rem(11);
   align-items: flex-end;
 }
 
@@ -75,18 +80,25 @@
   line-height: 1;
   font-family: $third-font-family;
   font-weight: $bold;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    transparent 45%,
+    #C94800 45%,
+    #C94800 58%,
+    transparent 58%,
+    transparent 100%,
+  );
 }
 
-// .card__price::after {
-//   content: "";
-//   width: rem(91);
-//   height: rem(3);
-//   background-color: #C94800;
-// }
-
 .card__price-down {
-  font-size: rem(40);
-  line-height: 1;
-  color: $green1;
+  font-size: rem(32);
+  font-family: $third-font-family;
+  font-weight: $bold;
+  @include mq("md") {
+    font-size: rem(40);
+    line-height: 1;
+    color: $green1;
+  }
 }
 

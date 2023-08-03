@@ -6,17 +6,13 @@
   }
 }
 
-.aboutus__inner {
-  overflow: hidden;
-}
 
 .aboutus__illust {
   @include mq("md") {
-    max-width: rem(194);
-    width: 100%;
-    position: absolute;
-    bottom: rem(-90);
-    right: calc(50% - rem(637));
+width: min(50%, rem(190));
+position: absolute;
+bottom: rem(-90);
+right: calc(50% - rem(637));
   }
 }
 
@@ -66,6 +62,7 @@
   margin-top: rem(24);
 
   @include mq("md") {
+    margin-top: rem(38);
     position: relative;
     padding-bottom: rem(55);
   }
@@ -81,7 +78,7 @@
     display: flex;
     gap: rem(40);
     position: absolute;
-    top: rem(200);
+    top: rem(204);
     right: rem(41);
   }
 }
@@ -121,6 +118,6 @@
 
 .aboutus__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(37);
 }
 
