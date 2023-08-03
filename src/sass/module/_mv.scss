@@ -12,17 +12,21 @@
 .mv__header {
   z-index: 10;
   position: absolute;
+  color: $white;
   top: 49%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: $white;
+  @include mq("md") {
+  top: 56%;
+  left: 50.5%;
+  }
 }
 
 .mv__title {
   font-size: rem(40);
   font-weight: $regular;
   font-family: $third-font-family;
-  letter-spacing: 0.054em;
+  letter-spacing: 0.17em;
   text-transform: uppercase;
   @include mq("md") {
     font-size: rem(80);
@@ -34,8 +38,10 @@
 .mv__text {
   font-size: rem(20);
   font-family: $second-font-family;
-  line-height: 1;
+  // line-height: 1;
+  font-weight: $regular;
   text-align: center;
+  // margin-top: rem(6);
 }
 
 

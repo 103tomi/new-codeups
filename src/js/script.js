@@ -61,7 +61,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       delay: 1500,
       disableOnInteraction: false,
     },
-   
+
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
@@ -69,43 +69,30 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
 
-//   const fadeIn = function(){
+  //要素の取得とスピードの設定
+  var box = $('.js-effect'),
+    speed = 700;
 
-//     const target = document.getElementsByClassName('js-effect');
-//     const position = Math.floor(window.innerHeight * .75);
+  //.colorboxの付いた全ての要素に対して下記の処理を行う
+  box.each(function () {
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($('.color')),
+      image = $(this).find('img');
+    var counter = 0;
 
-//     for (let i = 0; i < target.length; i++) {
-
-//         let offsetTop = Math.floor(target[i].getBoundingClientRect().top);
-//         let offsetBottom = Math.floor(target[i].getBoundingClientRect().bottom);
-
-//         if (offsetTop < position) {
-//             target[i].classList.add('scroll-in');
-//         }
-        
-//         if(offsetBottom < 0){
-//             target[i].classList.remove('scroll-in');
-//         }
-//     }
-// }
-// window.addEventListener('scroll', fadeIn, false);
-const fadeIn = function() {
-  const targets = document.getElementsByClassName('js-effect');
-  const position = Math.floor(window.innerHeight * 0.75);
-
-  for (let i = 0; i < targets.length; i++) {
-    const offsetTop = Math.floor(targets[i].getBoundingClientRect().top);
-    const offsetBottom = Math.floor(targets[i].getBoundingClientRect().bottom);
-
-    if (offsetTop < position) {
-      targets[i].classList.add('scroll-in');
-    } else {
-      targets[i].classList.remove('scroll-in');
-    }
-  }
-};
-
-window.addEventListener('scroll', fadeIn, false);
-
+    image.css('opacity', '0');
+    color.css('width', '0%');
+    //inviewを使って背景色が画面に現れたら処理をする
+    color.on('inview', function () {
+      if (counter == 0) {
+        $(this).delay(200).animate({ 'width': '100%' }, speed, function () {
+          image.css('opacity', '1');
+          $(this).css({ 'left': '0', 'right': 'auto' });
+          $(this).animate({ 'width': '0%' }, speed);
+        })
+        counter = 1;
+      }
+    });
+  });
 
 });

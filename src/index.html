@@ -26,14 +26,14 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Gotu&family=Lato:wght@400;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
     rel="stylesheet">
-  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+ 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
   <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+  <script defer src="../assets/js/jquery.inview.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -209,7 +209,7 @@
     <div class="mv">
       <div class="mv__inner">
         <div class="mv__header">
-          <h2 class="mv__title">d&nbsp;i&nbsp;v&nbsp;i&nbsp;n&nbsp;g</h2>
+          <h2 class="mv__title">D I V I N G</h2>
           <p class="mv__text">into&nbsp;the&nbsp;ocean</p>
         </div>
         <div class="swiper js-mv-swiper">
@@ -391,7 +391,7 @@
           <p class="section-header__jpnTitle">ダイビング情報</p>
         </div>
         <div class="information__content">
-          <div class="information__image effect js-effect">
+          <div class="information__effect effect js-effect">
             <img src="./assets/images/common/information_1.jpg" alt="">
           </div>
           <div class="information__body">
@@ -461,15 +461,15 @@
       </div>
     </section>
 
-
+  <!-- voice -->
     <section class="voice voice-layout">
       <div class="voice-inner inner">
         <div class="voice__header section-header">
           <h2 class="section-header__engTitle">Voice</h2>
           <p class="section-header__jpnTitle">お客様の声</p>
         </div>
-        <div class="voice__items card-list3">
-          <a href="" class="card-list3__item voice-card">
+        <div class="voice__items card-list2">
+          <a href="" class="card-list2__item voice-card">
             <div class="voice-card__head">
               <div class="voice-card__title-block">
                 <div class="voice-card__category-wrap">
@@ -478,7 +478,7 @@
                 </div>
                 <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
-              <div class="voice-card__img">
+              <div class="voice-card__img-effect effect js-effect">
                 <img src="./assets/images/common/voice-card_1.jpg" alt="">
               </div>
             </div>
@@ -486,7 +486,7 @@
               ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。
             </p>
           </a>
-          <a href="" class="card-list3__item voice-card">
+          <a href="" class="card-list2__item voice-card">
             <div class="voice-card__head">
               <div class="voice-card__title-block">
                 <div class="voice-card__category-wrap">
@@ -495,7 +495,7 @@
                 </div>
                 <h3 class="voice-card__title">ここにタイトルが入ります。ここにタイトル</h3>
               </div>
-              <div class="voice-card__img">
+              <div class="voice-card__effect effect js-effect">
                 <img src="./assets/images/common/voice-card_2.jpg" alt="">
               </div>
             </div>
@@ -512,6 +512,7 @@
       <img src="./assets/images/common/voice_fish_2.png" alt="" class="voice__illust2 u-desktop">
     </section>
 
+    <!-- Price -->
     <section class="price price-layout">
       <div class="price__inner inner">
         <div class="price__header section-header">
@@ -519,7 +520,7 @@
           <p class="section-header__jpnTitle">料金一覧</p>
         </div>
         <div class="price__contents">
-          <div class="price__img">
+          <div class="price__img-effect effect js-effect">
             <picture>
               <source srcset="./assets/images/common/price_sp.jpg" media="(max-width: 767px)">
               <img src="./assets/images/common/price_pc.jpg" alt="">
@@ -618,7 +619,7 @@
               <div class="contact__address-map">
                 <iframe
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8001.4359061940995!2d127.67421017904005!3d26.216819127343037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699d1d8938ef%3A0x2bb9259fb716a776!2z44CSOTAwLTAwMzIg5rKW57iE55yM6YKj6KaH5biC5p2-5bGx77yR5LiB55uu77yR!5e0!3m2!1sja!2sjp!4v1690985239883!5m2!1sja!2sjp"
-                  width="273" height="148" style="border:0;" allowfullscreen="" loading="lazy"
+                  width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
                   referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
@@ -764,7 +765,6 @@
       <small>Copyright © 2021 - 2023 CodeUps LLC. All Rights Reserved.</small>
     </div>
   </footer>
-
 
 </body>
 

@@ -77,6 +77,13 @@
   font-weight: $bold;
 }
 
+// .card__price::after {
+//   content: "";
+//   width: rem(91);
+//   height: rem(3);
+//   background-color: #C94800;
+// }
+
 .card__price-down {
   font-size: rem(40);
   line-height: 1;
