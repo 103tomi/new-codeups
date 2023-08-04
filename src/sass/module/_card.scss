@@ -15,7 +15,7 @@
 }
 
 .card__body {
-  padding: rem(16) rem(16) rem(24);
+  padding: rem(16);
   @include mq("md") {
     padding: rem(24) rem(16) rem(40);
   }
@@ -23,7 +23,10 @@
 
 .card__head {
   border-bottom: 1px solid $green1;
-  padding-bottom: rem(8);
+  padding-bottom: rem(6);
+  @include mq("md") {
+    padding-bottom: rem(8);
+  }
 }
 
 .card__category {
@@ -49,7 +52,7 @@
 }
 
 .card__foot {
-  margin-top: rem(8);
+  margin-top: rem(10);
   @include mq("md") {
       margin-top: rem(13);
   }
@@ -70,13 +73,16 @@
 .card__price-wrap {
   display: flex;
   justify-content: center;
-  gap: rem(24);
-  margin-top: rem(11);
-  align-items: flex-end;
+  gap: rem(15);
+  align-items: baseline;
+  @include mq("md") {
+    margin-top: rem(11);
+    gap: rem(24);
+  }
 }
 
 .card__price {
-  font-size: rem(24);
+  font-size: rem(20);
   line-height: 1;
   font-family: $third-font-family;
   font-weight: $bold;
@@ -89,6 +95,9 @@
     transparent 58%,
     transparent 100%,
   );
+  @include mq("md") {
+    font-size: rem(24);
+  }
 }
 
 .card__price-down {

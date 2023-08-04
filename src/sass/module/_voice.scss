@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: repeat(1fr);
   gap: rem(40);
-  margin-top: rem(40);
+  margin-top: rem(43);
   @include mq("md") {
     grid-template-columns: repeat(2 , 1fr);
     margin-top: rem(20);
@@ -17,7 +17,7 @@
 
 .voice__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(39);
   @include mq("md") {
     margin-top: rem(80);
   }

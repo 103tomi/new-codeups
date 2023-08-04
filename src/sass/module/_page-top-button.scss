@@ -1,15 +1,15 @@
 @use "global" as *;
 
-.page-top-button {
-  position: fixed;
-  z-index: 9000;
-  left: 0;
-  top: 0;
-  width: rem(80);
-  height: rem(80);
-  border: 1px solid $green1;
-  border-radius: 50%;
-  cursor: pointer;
+// .page-top-button {
+//   position: fixed;
+//   z-index: 9000;
+//   left: 0;
+//   top: 0;
+//   width: rem(80);
+//   height: rem(80);
+//   border: 1px solid $green1;
+//   border-radius: 50%;
+//   cursor: pointer;
   
   // @include mq("md") {
   //   right: rem(20);
@@ -17,18 +17,18 @@
   //   width: rem(80);
   //   height: rem(80);
   // }
-}
-.page-top-button img {
-  position: absolute;
-  top: 12.5px;
-  left: 17px;
-  width: 10px;
-  height: 21px;
 
-  @include mq("md") {
-    width: rem(6);
-    height: rem(40);
-    top: rem();
-    left: rem();
-  }
-}
+// .page-top-button img {
+//   position: absolute;
+//   top: 12.5px;
+//   left: 17px;
+//   width: 10px;
+//   height: 21px;
+
+//   @include mq("md") {
+//     width: rem(6);
+//     height: rem(40);
+//     top: rem();
+//     left: rem();
+//   }
+// }

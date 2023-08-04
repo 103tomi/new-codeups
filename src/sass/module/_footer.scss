@@ -2,8 +2,11 @@
 
 .footer {
   background-color: $green1;
-  padding: rem(80) 0;
+  padding: rem(48) 0 rem(56);
   position: relative;
+  @include mq("md") {
+    padding: rem(80);
+  }
 }
 
 .footer__head {
@@ -21,26 +24,39 @@
 }
 
 .footer__sns {
-  padding-top: rem(39);
+  padding-top: rem(17);
+  @include mq("md") {
+    padding-top: rem(39);
+  }
 }
 
 .footer__sns-items {
   display: flex;
   gap: rem(16);
+  @include mq("md") {
+    gap: rem(16);
+  }
+  
 }
 
 .footer__sns-item img {
-  width: rem(20);
+  width: rem(24);
   @include mq("md") {
     width: rem(32);
   }
 }
 
 .footer__nav-wrap {
-  margin-top: rem(40);
+   margin: 0 auto;
+  max-width: rem(345);
+  width: 100%;
   @include mq("md") {
-    margin-top: rem(12);
+  max-width: rem(1080);
   }
+}
+
+.footer__nav {
+ 
 }
 
 .footer__copyright {
@@ -49,10 +65,10 @@
   font-family: $second-font-family;
   color: $white;
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(30);
+  letter-spacing: 0.08em;
   @include mq("md") {
     font-size: rem(14);
-    margin-top: rem(64);
-    letter-spacing: 0.08em;
+    margin-top: rem(67);
   }
 }

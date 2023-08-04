@@ -10,11 +10,13 @@
 }
 
 .mv__header {
+  text-align: center;
+  width: 100%;
   z-index: 10;
   position: absolute;
   color: $white;
-  top: 49%;
-  left: 50%;
+  top: 50%;
+  left: 51%;
   transform: translate(-50%, -50%);
   @include mq("md") {
   top: 55%;
@@ -26,9 +28,10 @@
   font-size: rem(40);
   font-weight: $regular;
   font-family: $third-font-family;
-  letter-spacing: 0.17em;
+ letter-spacing: 0.17em;
   text-transform: uppercase;
   @include mq("md") {
+    
     font-size: rem(80);
     line-height: calc(100 / 80);
   }

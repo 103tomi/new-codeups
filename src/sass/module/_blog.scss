@@ -14,13 +14,14 @@
   margin-top: rem(24);
   display: grid;
   grid-template-rows: 1fr;
-  gap: rem(40);
+  gap: rem(33);
 
   @include mq("md") {
     margin-top: rem(80);
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 .blog-card__img img {
   aspect-ratio: 301 / 201;
@@ -31,7 +32,7 @@
 
 .blog__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(37);
 
   @include mq("md") {
     margin-top: rem(80);

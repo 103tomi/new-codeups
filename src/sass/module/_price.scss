@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .price {
-  padding: rem(80) 0;
+  padding: rem(80) 0 rem(83);
   background-color: $green2;
   @include mq("md") {
     position: relative;
@@ -10,7 +10,7 @@
 }
 
 .price__contents {
-  margin-top: rem(24);
+  margin-top: rem(26);
   @include mq("md") {
     margin-top: rem(40);
     display: grid;
@@ -52,7 +52,7 @@
 
 .price__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(37);
   @include mq("md") {
     margin-top: rem(80);
   }
