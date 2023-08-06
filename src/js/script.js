@@ -8,8 +8,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       $(".js-drawer").fadeToggle();
     });
 
+       // // メインビューのスライダー
+  var swiper = new Swiper(".js-mv-swiper", {
+    loop: true,
+    effect: "fade",
+    speed: 3000,
+    autoplay: {
+      delay: 3000,
+    },
+  });
 
-    
   // キャンペーンのスライダー
   var swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
@@ -22,9 +30,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       768: {
         slidesPerView: 3.45,
         spaceBetween: 35,
-      },
-    },
-
+    }
+  },
     autoplay: {
       delay: 2000,
       disableOnInteraction: false,
@@ -33,7 +40,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
-    },
+    }
   });
 
 // カラーアニメーション

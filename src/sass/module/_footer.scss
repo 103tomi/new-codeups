@@ -75,11 +75,10 @@
   color: $white;
   text-align: center;
   margin-top: rem(28);
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 
   @include mq("md") {
     font-size: rem(14);
     margin-top: rem(67);
-    letter-spacing: 0.08em;
   }
 }
