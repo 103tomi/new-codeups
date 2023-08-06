@@ -5,6 +5,16 @@
   overflow: hidden;
 }
 
+
+
+.campaign__swiper {
+ max-width: rem(1252);
+  width: 100vw;
+  padding-bottom: 10px;
+  height: auto;
+}
+
+
 .campaign__wrap {
   margin-top: rem(24);
   @include mq("md") {
@@ -14,9 +24,10 @@
 
 .campaign__button {
   text-align: center;
-  margin-top: rem(40);
+  margin-top: rem(31);
+  padding-bottom: rem(4);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(70);
   }
 }
 

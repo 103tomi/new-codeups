@@ -61,8 +61,11 @@
 
 .aboutus__contents {
   margin-top: rem(29);
-
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
   @include mq("md") {
+    max-width: rem(1080);
     margin-top: rem(38);
     position: relative;
     padding-bottom: rem(55);
@@ -89,6 +92,7 @@
   line-height: 1;
   font-family: $second-font-family;
   color: $green1;
+  font-weight: $regular;
 
   @include mq("md") {
     font-size: rem(80);
@@ -123,5 +127,4 @@
   @include mq("md") {
     margin-top: rem(37);
   }
-
 }

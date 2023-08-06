@@ -11,7 +11,6 @@
 
 .mv__header {
   text-align: center;
-  width: 100%;
   z-index: 10;
   position: absolute;
   color: $white;
@@ -19,7 +18,7 @@
   left: 51%;
   transform: translate(-50%, -50%);
   @include mq("md") {
-  top: 55%;
+  top: 55.5%;
   left: 50.5%;
   }
 }
@@ -31,7 +30,6 @@
  letter-spacing: 0.17em;
   text-transform: uppercase;
   @include mq("md") {
-    
     font-size: rem(80);
     line-height: calc(100 / 80);
   }
@@ -41,12 +39,14 @@
 .mv__text {
   font-size: rem(20);
   font-family: $second-font-family;
-  // line-height: 1;
   font-weight: $regular;
   text-align: center;
-  // margin-top: rem(6);
 }
 
+.mv__swiper {
+  height: inherit;
+  width: 100%;
+}
 
 .mv__img,
 .mv__img picture,

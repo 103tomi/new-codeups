@@ -2,7 +2,7 @@
 
 .blog {
   @include mq("md") {
-    padding-top: rem(108);
+    padding-top: rem(100);
     background-image: url(../images/common/blog_bg.jpg);
     background-size: 100% 61%;
     background-repeat: no-repeat;
@@ -19,6 +19,7 @@
   @include mq("md") {
     margin-top: rem(80);
     grid-template-columns: repeat(3, 1fr);
+    column-gap: rem(38);
   }
 }
 

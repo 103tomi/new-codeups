@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.blog-card__img {
-  max-width: rem(330);
-}
 
 .blog-card__img img {
   aspect-ratio: 301 / 201;
@@ -13,6 +10,9 @@
 
 .blog-card__body {
   margin-top: rem(18);
+  @include mq("md") {
+    margin-top: rem(17);
+  }
 }
 
 .blog-card__head {

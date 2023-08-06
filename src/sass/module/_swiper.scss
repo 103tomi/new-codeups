@@ -1,19 +1,14 @@
 @use "global" as *;
 
-.swiper {
-  height: inherit;
-  width: 100%;
-  overflow: visible;
-}
 
 .swiper-button-prev {
   display: none;
   @include mq("md") {
   display: inline-block;
   position: absolute;
-  width: rem(80);
-  height: rem(80);
-  top: rem(24);
+  width: rem(78);
+  height: rem(78);
+  top: rem(30);
   left: 71%;
   border: 1px solid $green1;
   border-radius: 50%;
@@ -40,9 +35,9 @@
   @include mq("md") {
   display: inline-block;
   position: absolute;
-  width: rem(80);
-  height: rem(80);
-  top: rem(24);
+  width: rem(78);
+  height: rem(78);
+  top: rem(30);
   right: 12.4%;
   border: 1px solid $green1;
   border-radius: 50%;

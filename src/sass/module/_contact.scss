@@ -26,7 +26,7 @@
 
 .contact__logo {
   border-bottom: 1px solid $green1;
-  padding-bottom: rem(3);
+  // padding-bottom: rem(1);
   text-align: center;
 }
 
@@ -40,10 +40,10 @@
 }
 
 .contact__address {
-  margin-top: rem(13);
+  margin-top: rem(16);
 
   @include mq("md") {
-    margin-top: rem(24);
+    margin-top: rem(26);
     display: flex;
   }
 }
@@ -110,7 +110,6 @@
   top: rem(-25);
   right: rem(14);
 
-  // right: calc(50% - rem(10));
   @include mq("md") {
     width: rem(301);
     top: rem(-50);

@@ -3,3 +3,9 @@
 .drawer__inner {
   height: inherit;
 }
+
+.drawer__nav {
+  max-width: rem(345);
+  width: 100%;
+  margin: 0 auto;
+}
