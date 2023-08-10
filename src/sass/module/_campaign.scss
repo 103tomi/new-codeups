@@ -80,11 +80,11 @@
 
 .campaign__swiper {
   margin-right: calc(50% - 50vw);
+  padding-bottom: rem(10);
 }
 
 .campaign__wrap {
   display: flex;
-  padding-bottom: rem(10);
   margin-top: rem(26);
 
   @include mq("md") {
