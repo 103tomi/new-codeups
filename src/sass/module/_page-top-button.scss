@@ -2,6 +2,7 @@
 
 .page-top-button {
   position: fixed;
+  z-index: 10;
   right: rem(19);
   bottom: rem(16);
   @include mq("md") {
@@ -12,6 +13,7 @@
 
 .page-top-button a {
   display: block;
+  background-color: $white;
   border: 1px solid $green1;
   border-radius: 50%;
   width: rem(48);

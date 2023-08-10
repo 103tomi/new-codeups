@@ -16,7 +16,21 @@
   margin-top: rem(8);
 }
 
-.price-list dt,
+.price-list dt {
+  font-size: rem(14);
+  line-height: calc(24 / 14);
+  font-family: $base-font-family;
+  font-weight: $regular;
+  max-width: rem(253);
+  width: 100%;
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: calc(24 / 16);
+    max-width: rem(300);
+  }
+}
+
+
 .price-list dd {
   font-size: rem(14);
   line-height: calc(24 / 14);

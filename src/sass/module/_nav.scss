@@ -10,14 +10,9 @@
   }
 }
 
-.nav__content.nav__content--gap {
-  gap: rem(18);
-  @include mq("md") {
-    gap: rem(16);
-  }
-}
 
 .nav__wrap1 {
+  flex-grow: 1;
   @include mq("md") {
     display: flex;
     gap: rem(120);
@@ -25,38 +20,37 @@
   }
 }
 
-.nav__unit2 {
-  margin-top: rem(16);
-
-  @include mq("md") {
-    margin-top: 0;
-
-  }
-}
-
 .nav__wrap2 {
+  flex-grow: 1;
   @include mq("md") {
     display: flex;
     gap: rem(120);
-
+    width: 48%;
   }
 }
 
-.nav__title {
+.nav__menu-title {
+  display: inline-block;
   font-size: rem(16);
   line-height: calc(18 / 16);
-  font-family: $base-font-family;
   font-weight: $bold;
   color: $white;
   padding: rem(12) 0;
-  white-space: nowrap;
 }
 
-.nav__item a:hover {
-  opacity: 0.7;
+.nav__menu-title {
+  padding-left: 1.375em;
+  text-indent: -1.375em;
 }
 
-.nav__title::before {
+.nav__menu-title:hover,
+.nav__menu-lists a:hover {
+  @include mq("md") {
+    opacity: 0.7;
+  }
+}
+
+.nav__menu-title::before {
   display: inline-block;
   content: "";
   background-image: url(../images/common/starfish.png);
@@ -68,34 +62,20 @@
   margin-right: rem(4);
 }
 
-.nav__text {
+.nav__menu-lists li {
   font-size: rem(16);
   line-height: calc(18 / 16);
-  font-family: $base-font-family;
   font-weight: $regular;
   color: $white;
   padding: rem(12) 0 rem(12) rem(22);
   white-space: nowrap;
 }
 
-.nav__single-unit {
+.nav__menu-title-blok {
   margin-top: rem(16);
 }
 
-.nav__unit3 .nav__item:nth-of-type(2) {
-  margin-top: rem(16);
-}
-
-.nav__wrap2 .nav__items:first-child .nav__single-unit:nth-of-type(1) {
-  margin-top: 0;
-}
-
-.nav__wrap2 .nav__items:nth-child(2) .nav__item:nth-child(2) .nav__single-unit:nth-of-type(1) {
-  padding-left: 1.375em;
-  text-indent: -1.375em;
-}
-
-.nav__wrap2 .nav__items:nth-child(2) .nav__item:first-child .nav__single-unit {
+.nav__menu-title-blok--margin {
   @include mq("md") {
     margin-top: 0;
   }

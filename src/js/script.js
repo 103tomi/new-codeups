@@ -22,14 +22,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var swiper = new Swiper(".js-campaign-swiper", {
     loop: true,
     speed: 1500,
-    slidesPerView: 1.3,
+    slidesPerView: 1.26,
     spaceBetween: 24,
     allowTouchMove: false,
 
     breakpoints: {
       768: {
-        slidesPerView: 3.45,
-        spaceBetween: 35,
+        slidesPerView: 3.48,
+        spaceBetween: 37,
     }
   },
     autoplay: {

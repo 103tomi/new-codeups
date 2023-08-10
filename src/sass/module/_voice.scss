@@ -19,15 +19,17 @@
   text-align: center;
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(82);
   }
 }
 
 .voice__illust {
-  width: rem(301);
-  position: absolute;
-  top: rem(-120);
-  left: calc(50% - rem(619));
+  @include mq("md") {
+    width: rem(301);
+    position: absolute;
+    top: rem(-120);
+    left: calc(50% - min(50vw, rem(619)));
+  }
 }
 
 .voice__illust2 {
@@ -35,6 +37,6 @@
     width: rem(71);
     position: absolute;
     bottom: rem(-67);
-    right: calc(50% - rem(540));
+    right: calc(50% - min(50vw, rem(540)));
   }
 }

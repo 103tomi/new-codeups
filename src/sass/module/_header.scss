@@ -16,6 +16,8 @@
 }
 
 .header__logo {
+  position: relative;
+  z-index: 9999;
   width: rem(102);
   height: inherit;
   @include mq("md") {
@@ -96,12 +98,9 @@
     height: 100vh;
     overflow-y: scroll;
     background-color: $green1;
-    padding-top: rem(64);
-    padding-bottom: rem(111);
 }
 
 .header__nav {
   height: inherit;
   margin-left: auto;
-  // width: clamp(636px, 50% 817px);
 }

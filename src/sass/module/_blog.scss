@@ -3,11 +3,20 @@
 .blog {
   @include mq("md") {
     padding-top: rem(100);
-    background-image: url(../images/common/blog_bg.jpg);
-    background-size: 100% 61%;
-    background-repeat: no-repeat;
     position: relative;
   }
+}
+
+.blog::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  z-index: -1;
+   background-image: url(../images/common/blog_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: rem(500);
 }
 
 .blog__items {
@@ -45,6 +54,6 @@
     width: rem(376);
     position: absolute;
     top: rem(24);
-    left: calc(50% - rem(620));
+    left: calc(50% - min(50vw, rem(620)));
   }
 }
