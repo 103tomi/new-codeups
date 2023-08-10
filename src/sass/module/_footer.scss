@@ -25,6 +25,10 @@
   }
 }
 
+.footer__logo a {
+  display: block;
+}
+
 .footer__logo a:hover {
   @include mq("md") {
     opacity: 0.7;
@@ -46,6 +50,10 @@
   @include mq("md") {
     gap: rem(16);
   }
+}
+
+.footer__sns-item a {
+  display: block;
 }
 
 .footer__sns-item a:hover {
