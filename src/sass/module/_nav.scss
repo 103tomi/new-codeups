@@ -3,19 +3,18 @@
 .nav__content {
   display: flex;
   gap: rem(8);
-  margin-top: rem(27);
+  // margin-top: rem(27);
   @include mq("md") {
     gap: rem(16);
     margin-top: rem(12);
   }
 }
 
-
 .nav__wrap1 {
   flex-grow: 1;
   @include mq("md") {
     display: flex;
-    gap: rem(120);
+    gap: rem(88);
     width: 50%;
   }
 }
@@ -24,13 +23,21 @@
   flex-grow: 1;
   @include mq("md") {
     display: flex;
-    gap: rem(120);
+    gap: rem(70);
     width: 48%;
+  }
+}
+
+.nav__menu {
+  @include mq("md") {
+    max-width: rem(200);
+    width: 100%;
   }
 }
 
 .nav__menu-title {
   display: inline-block;
+  width: 100%;
   font-size: rem(16);
   line-height: calc(18 / 16);
   font-weight: $bold;
@@ -62,7 +69,9 @@
   margin-right: rem(4);
 }
 
-.nav__menu-lists li {
+.nav__menu-lists a {
+  display: inline-block;
+  width: 100%;
   font-size: rem(16);
   line-height: calc(18 / 16);
   font-weight: $regular;

@@ -5,7 +5,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     // ハンバーガーメニュー
     $(".js-hamburger,.js-drawer").click(function () {
       $(".js-hamburger").toggleClass("is-active");
+      $(".js-header").toggleClass("is-active");
       $(".js-drawer").fadeToggle();
+
+    if ($(".js-drawer").is(":visible")) {
+      $("body").css("overflow", "hidden");
+    } else {
+      $("body").css("overflow", "");
+    }
     });
 
        // // メインビューのスライダー
@@ -89,4 +96,5 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       return false;
     });
   });
+
 });

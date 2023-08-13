@@ -1,8 +1,8 @@
 @use "global" as *;
 
 .drawer__inner {
-  height: inherit;
-  padding: rem(66) rem(15) 0;
+  padding: rem(13) rem(15) rem(93);
+  display: flex;
 }
 
 .drawer__nav {

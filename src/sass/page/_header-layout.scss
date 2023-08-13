@@ -4,7 +4,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
+  right: 0;
+  z-index: 9000;
   width: 100%;
   height: rem(80);
   @include mq("md") {

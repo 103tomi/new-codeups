@@ -12,7 +12,7 @@
 
 .price-list dl {
   display: flex;
-  justify-content: space-between;
+ flex-wrap: wrap;
   margin-top: rem(8);
 }
 
@@ -21,17 +21,16 @@
   line-height: calc(24 / 14);
   font-family: $base-font-family;
   font-weight: $regular;
-  max-width: rem(253);
-  width: 100%;
+  width: 70%;
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);
-    max-width: rem(300);
   }
 }
 
 
 .price-list dd {
+  margin-left: auto;
   font-size: rem(14);
   line-height: calc(24 / 14);
   font-family: $base-font-family;

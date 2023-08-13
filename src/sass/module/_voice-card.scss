@@ -23,7 +23,6 @@
 .voice-card__category-wrap {
   @include mq("md") {
     display: flex;
-    justify-content: space-between;
     align-items: flex-end;
   }
 }
@@ -45,6 +44,7 @@
   border: 1px solid $green1;
   padding: rem(3) rem(12);
   @include mq("md") {
+    margin-left: auto;
     padding: rem(5) rem(15);
   }
 }
