@@ -8,15 +8,33 @@
 }
 
 .blog::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  z-index: -1;
-   background-image: url(../images/common/blog_bg.jpg);
+  @include mq("md") {
+    content: "";
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background-image: url(../images/common/blog_bg.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: rem(500);
+  }
+}
+
+.blog::after {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/common/blog_fish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: rem(376);
+    height: rem(120);
+    position: absolute;
+    top: rem(24);
+    left: calc(50% - min(48vw, rem(620)));
+  }
 }
 
 .blog__items {

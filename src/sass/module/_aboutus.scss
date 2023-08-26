@@ -1,22 +1,5 @@
 @use "global" as *;
 
-.aboutus {
-  @include mq("md") {
-    position: relative;
-  }
-}
-
-
-.aboutus__illust {
-  @include mq("md") {
-    display: inline-block;
-    width: rem(190);
-    position: absolute;
-    bottom: rem(-90);
-    right: calc(50% - min(48vw, rem(636)));
-  }
-}
-
 .aboutus__images {
   position: relative;
   padding-bottom: rem(18);
@@ -28,6 +11,8 @@
 
 .aboutus__img1 {
   width: 37.1%;
+  position: relative;
+  z-index: 1;
 }
 
 .aboutus__img1 source {
@@ -48,7 +33,6 @@
 
 
 .aboutus__img2 {
-  z-index: -1;
   position: absolute;
   top: rem(26);
   right: 0;
@@ -84,6 +68,21 @@
   }
 }
 
+.aboutus__contents::after {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/common/aboutus_sango.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: rem(194);
+    height: rem(181);
+    position: absolute;
+    bottom: rem(-90);
+    right: calc(50% - min(48vw, rem(636)));
+  }
+}
+
 .aboutus__content {
   margin-top: rem(40);
 
@@ -96,6 +95,7 @@
     position: absolute;
     top: rem(204);
     right: rem(41);
+    z-index: 2;
   }
 }
 

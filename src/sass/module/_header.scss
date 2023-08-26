@@ -6,6 +6,7 @@
 
 .header.is-active {
   background-color: $green1;
+  transition: .3s;
 }
 
 .header__inner {
@@ -16,7 +17,8 @@
   padding: 0 rem(15);
 
   @include mq("md") {
-    padding: 0 rem(20) 0 rem(40);
+    padding-left: min(3.12vw, rem(40));
+    padding-right: min(1.56vw, rem(20));
   }
 }
 

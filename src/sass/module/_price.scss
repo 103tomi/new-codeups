@@ -9,6 +9,21 @@
   }
 }
 
+.price::after {
+  @include mq("md") {
+    content: "";
+  background-image: url(../images/common/price_fish.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: rem(60);
+  width: min(35vw, rem(437));
+  height: rem(201);
+  left: calc(50% - min(48vw, rem(620)));
+  }
+}
+
 .price__contents {
   margin-top: rem(27);
   max-width: rem(600);
@@ -60,11 +75,4 @@
   @include mq("md") {
     margin-top: rem(78);
   }
-}
-
-.price__illust {
-  position: absolute;
-  bottom: rem(60);
-  width: rem(437);
-  left: calc(50% - min(50vw, rem(620)));
 }

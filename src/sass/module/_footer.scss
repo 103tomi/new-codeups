@@ -80,6 +80,13 @@
   }
 }
 
+.footer__nav {
+  margin-top: rem(27);
+  @include mq("md") {
+    margin-top: rem(12);
+  }
+}
+
 .footer__copyright {
   font-size: rem(12);
   line-height: calc(18 / 12);

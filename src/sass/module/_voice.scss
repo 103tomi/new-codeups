@@ -4,10 +4,40 @@
   position: relative;
 }
 
+.voice::before {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/common/voice_fish.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: rem(301);
+    height: rem(138);
+    position: absolute;
+    top: rem(-120);
+    left: calc(50% - min(48vw, rem(619)));
+  }
+}
+
+.voice::after {
+  @include mq("md") {
+    content: "";
+    background-image: url(../images/common/voice_fish_2.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: rem(71);
+    height: rem(162);
+    position: absolute;
+    bottom: rem(-67);
+    right: calc(50% - min(47vw, rem(540)));
+  }
+}
+
 .voice__items {
   display: grid;
   grid-template-columns: 1fr;
-  gap: rem(40);
+  gap: rem(37);
   margin-top: rem(43);
   @include mq("md") {
     grid-template-columns: repeat(2 , 1fr);
@@ -20,23 +50,5 @@
   margin-top: rem(40);
   @include mq("md") {
     margin-top: rem(82);
-  }
-}
-
-.voice__illust {
-  @include mq("md") {
-    width: rem(301);
-    position: absolute;
-    top: rem(-120);
-    left: calc(50% - min(50vw, rem(619)));
-  }
-}
-
-.voice__illust2 {
-  @include mq("md") {
-    width: rem(71);
-    position: absolute;
-    bottom: rem(-67);
-    right: calc(50% - min(50vw, rem(540)));
   }
 }

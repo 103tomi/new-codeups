@@ -6,13 +6,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(".js-hamburger,.js-drawer").click(function () {
       $(".js-hamburger").toggleClass("is-active");
       $(".js-header").toggleClass("is-active");
-      $(".js-drawer").fadeToggle();
-
-    if ($(".js-drawer").is(":visible")) {
-      $("body").css("overflow", "hidden");
-    } else {
-      $("body").css("overflow", "");
-    }
+      $(".js-body").toggleClass("is-active");
+      $(".js-drawer").fadeToggle(300);
     });
 
        // // メインビューのスライダー

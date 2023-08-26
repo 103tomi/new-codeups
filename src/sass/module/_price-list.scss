@@ -12,8 +12,9 @@
 
 .price-list dl {
   display: flex;
- flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: rem(8);
+  row-gap: rem(8);
 }
 
 .price-list dt {
@@ -21,7 +22,8 @@
   line-height: calc(24 / 14);
   font-family: $base-font-family;
   font-weight: $regular;
-  width: 70%;
+  width: 73%;
+
   @include mq("md") {
     font-size: rem(16);
     line-height: calc(24 / 16);
