@@ -2,7 +2,8 @@
 
 .drawer__inner {
   padding: rem(13) rem(15) rem(93);
-  display: flex;
+  height: inherit;
+  overflow-y: scroll;
 }
 
 .drawer__nav {

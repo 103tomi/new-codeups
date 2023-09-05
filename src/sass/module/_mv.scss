@@ -3,6 +3,7 @@
 .mv {
   position: relative;
   height: 100vh;
+  min-height: rem(400);
 }
 
 .mv__inner {
