@@ -4,11 +4,6 @@
   background-color: rgba(13, 41, 54, 0.68);
 }
 
-.header.is-active {
-  background-color: $green1;
-  transition: .3s;
-}
-
 .header__inner {
   width: 100%;
   display: flex;
